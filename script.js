@@ -19,7 +19,7 @@ document.getElementById('download-images-button').addEventListener('click',(even
 
 	Promise.all(promises).then(images => {
 		images.forEach((image) => {
-			document.getElementById('output').appenChild(image);
+			document.getElementById('output').appendChild(image);
 		});
 	}).catch(error => {
 		console.log(`there is an ${error}`);
